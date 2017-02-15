@@ -18,6 +18,7 @@ import java.util.concurrent.locks.ReentrantLock
 
 buildscript {
   repositories {
+    mavenLocal()
     jcenter()
     maven {
       url "https://plugins.gradle.org/m2/"
@@ -133,6 +134,7 @@ allprojects {
   apply from: "$rootDir/gradle/dependencyRules.gradle"
 
   repositories {
+    mavenLocal()
     jcenter()
     maven { url 'http://oss.jfrog.org/artifactory/repo' }
   }
